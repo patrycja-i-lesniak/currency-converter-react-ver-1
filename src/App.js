@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Paragraph from "./Paragraph";
 
 function App() {
   return (
@@ -8,17 +9,13 @@ function App() {
           <Header title="Kalkulator walut" />
           <p>
             <label>
-              <span className="form__text">
-                Wartość w PLN:
-              </span>
+            <Paragraph text=" Wartość w PLN:" />
               <input className="form__input js-inputValue" type="number" min="0.01" step="0.01" placeholder="0,00" required />
             </label>
           </p>
           <p>
             <label>
-              <span className="form__text">
-                Przelicz na:
-                </span>
+            <Paragraph text="Przelicz na:" />
               <select className="form__select js-selectedCurrency" name="convertTo">
                 <option value="">wybierz walutę </option>
                 <option value="CHF">CHF - Frank szwajcarski</option>
@@ -30,8 +27,10 @@ function App() {
           <p className="container">
             <button className="form__button">Policz kurs:</button>
           </p>
-          <p className="paragraph"> Kwota w wybranej walucie: <span className="paragraph__value js-value">N/A</span></p>
-        </fieldset>
+          <Paragraph text="Kwota w wybranej walucie:">
+                <span className="paragraph--value">N/A</span>
+            </Paragraph>
+            </fieldset>
       </form>
     </main>
   );
