@@ -1,9 +1,11 @@
+import Header from "./Header";
+
 function App() {
   return (
-    <main>
+    <main className="container">
       <form className="form js-form">
         <fieldset className="form__fieldset">
-          <legend className="form__legend">Kalkulator walut</legend>
+          <Header title="Kalkulator walut" />
           <p>
             <label>
               <span className="form__text">
