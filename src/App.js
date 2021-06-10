@@ -3,6 +3,7 @@ import Paragraph from "./Paragraph";
 import Footer from "./Footer";
 import Input from "./Input";
 import Select from "./Select";
+import Button from "./Button";
 
 function App() {
   return (
@@ -10,13 +11,11 @@ function App() {
       <Header title="Kalkulator walut" />
       <form className="form js-form">
         <fieldset className="form__fieldset">
-              <Paragraph text=" Wartość w PLN:" />
-              <Input />
-              <Paragraph text="Przelicz na:" />
-              <Select />
-          <p className="container">
-            <button className="form__button">Policz kurs:</button>
-          </p>
+          <Paragraph text=" Wartość w PLN:" />
+          <Input />
+          <Paragraph text="Przelicz na:" />
+          <Select />
+          <Button buttonName="Policz kurs" />
           <Paragraph text="Kwota w wybranej walucie:">
             <span className="paragraph--value">N/A</span>
           </Paragraph>
