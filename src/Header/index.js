@@ -1,6 +1,6 @@
 import "./style.css";
 
 const Header = ({ title }) => (
-    <legend className="form__legend">{title}</legend>
+    <h1 className="header header__text">{title}</h1>
 );
 export default Header;

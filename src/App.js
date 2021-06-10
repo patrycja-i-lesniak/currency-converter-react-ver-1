@@ -4,9 +4,9 @@ import Paragraph from "./Paragraph";
 function App() {
   return (
     <main className="container">
-      <form className="form js-form">
+     <Header title="Kalkulator walut" /> 
+     <form className="form js-form">
         <fieldset className="form__fieldset">
-          <Header title="Kalkulator walut" />
           <p>
             <label>
             <Paragraph text=" Wartość w PLN:" />
