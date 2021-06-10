@@ -2,6 +2,7 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import Footer from "./Footer";
 import Input from "./Input";
+import Select from "./Select";
 
 function App() {
   return (
@@ -9,23 +10,10 @@ function App() {
       <Header title="Kalkulator walut" />
       <form className="form js-form">
         <fieldset className="form__fieldset">
-          <p>
-            <label>
               <Paragraph text=" Wartość w PLN:" />
               <Input />
-            </label>
-          </p>
-          <p>
-            <label>
               <Paragraph text="Przelicz na:" />
-              <select className="form__select js-selectedCurrency" name="convertTo">
-                <option value="">wybierz walutę </option>
-                <option value="CHF">CHF - Frank szwajcarski</option>
-                <option value="EUR">EUR - Euro </option>
-                <option value="GBP">GBP - Brytyjski funt szterling </option>
-              </select>
-            </label>
-          </p>
+              <Select />
           <p className="container">
             <button className="form__button">Policz kurs:</button>
           </p>
