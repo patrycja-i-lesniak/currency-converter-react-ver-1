@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Paragraph from "./Paragraph";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             </Paragraph>
             </fieldset>
       </form>
+      <Footer />
     </main>
   );
 }
