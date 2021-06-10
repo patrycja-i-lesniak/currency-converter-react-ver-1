@@ -1,15 +1,16 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Form from "./Form";
+import Container from "./Container";
 
 
 function App() {
   return (
-    <main className="container">
+    <Container>
       <Header title="Kalkulator walut" />
       <Form />
       <Footer />
-    </main>
+    </Container>
   );
 }
 
