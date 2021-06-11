@@ -1,15 +1,15 @@
 .header {
-    background-color: hsl(221, 51%, 25%);
-    color: white;
-    padding: 30px;
-    box-shadow: 5px 5px 10px #ccc;
-    margin: auto;
-    text-transform:uppercase;
-    letter-spacing:5px;
-    word-spacing: 15px;
-  }
+  background-color: hsl(221, 51%, 25%);
+  color: white;
+  padding: 30px;
+  box-shadow: 5px 5px 10px #ccc;
+  margin: auto;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+}
 
-  .header__text {
-    text-align:center;
-    font-size: larger;
-  }
+.header__text {
+  text-align: center;
+  font-size: larger;
+}

@@ -7,7 +7,7 @@ import Result from "../Result";
 
 const Form = () => (
     <form className="form">
-        <fieldset className="form__fieldset">
+        <fieldset className="form__field">
             <Paragraph text=" Wartość w PLN:" />
             <Input />
             <Paragraph text="Przelicz na:" />
