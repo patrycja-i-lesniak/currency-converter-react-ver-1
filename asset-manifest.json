@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/css/main.4005146c.chunk.css",
-    "main.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/main.c71b97b4.chunk.js",
-    "main.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/main.c71b97b4.chunk.js.map",
-    "runtime-main.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/runtime-main.6f4ec4e5.js",
-    "runtime-main.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/runtime-main.6f4ec4e5.js.map",
+    "main.css": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/css/main.74920165.chunk.css",
+    "main.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/main.55f45cb1.chunk.js",
+    "main.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/main.55f45cb1.chunk.js.map",
+    "runtime-main.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/runtime-main.654a6e6c.js",
+    "runtime-main.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/runtime-main.654a6e6c.js.map",
     "static/js/2.d8b62bcd.chunk.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/2.d8b62bcd.chunk.js",
     "static/js/2.d8b62bcd.chunk.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/2.d8b62bcd.chunk.js.map",
-    "static/js/3.bfcc9e47.chunk.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/3.bfcc9e47.chunk.js",
-    "static/js/3.bfcc9e47.chunk.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/3.bfcc9e47.chunk.js.map",
+    "static/js/3.55e7070c.chunk.js": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/3.55e7070c.chunk.js",
+    "static/js/3.55e7070c.chunk.js.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/3.55e7070c.chunk.js.map",
     "index.html": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/index.html",
-    "static/css/main.4005146c.chunk.css.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/css/main.4005146c.chunk.css.map",
+    "static/css/main.74920165.chunk.css.map": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/css/main.74920165.chunk.css.map",
     "static/js/2.d8b62bcd.chunk.js.LICENSE.txt": "/patrycja-i-lesniak/currency-converter-react-ver-1.git/static/js/2.d8b62bcd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f4ec4e5.js",
+    "static/js/runtime-main.654a6e6c.js",
     "static/js/2.d8b62bcd.chunk.js",
-    "static/css/main.4005146c.chunk.css",
-    "static/js/main.c71b97b4.chunk.js"
+    "static/css/main.74920165.chunk.css",
+    "static/js/main.55f45cb1.chunk.js"
   ]
 }
