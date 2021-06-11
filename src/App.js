@@ -11,7 +11,7 @@ function App() {
     <Container>
       <Header title="Kalkulator walut" />
       <Form currencies={currencies} />
-      <Footer />
+      <Footer text="Coded by Trishya © 2021" />
     </Container>
     </>
   );

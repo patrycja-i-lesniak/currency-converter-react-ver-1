@@ -1,9 +1,9 @@
 import "./style.css";
 import Paragraph from "../Paragraph";
 
-const Footer = () => (
+const Footer = ({text}) => (
     <footer className="footer">
-        <Paragraph text="Copyright © 2021 Trishya" />
+        <Paragraph text={text}/>
     </footer>
 );
 
