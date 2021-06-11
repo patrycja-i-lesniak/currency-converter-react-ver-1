@@ -3,6 +3,7 @@ import Button from "../Button";
 import Input from "../Input";
 import Paragraph from "../Paragraph";
 import Select from "../Select";
+import Result from "../Result";
 
 const Form = () => (
     <form className="form">
@@ -13,7 +14,7 @@ const Form = () => (
             <Select />
             <Button buttonName="Policz kurs" />
             <Paragraph text="Kwota w wybranej walucie:">
-                <span className="paragraph--value">N/A</span>
+                <Result />
             </Paragraph>
         </fieldset>
     </form>
