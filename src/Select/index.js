@@ -1,12 +1,26 @@
 import "./style.css";
+import { useState } from "react";
+import currencies from "../currencies"
 
-const Select = () => (
-    <select className="select" name="convertTo">
-        <option value="">wybierz walutę </option>
-        <option value="CHF">CHF - Frank szwajcarski</option>
-        <option value="EUR">EUR - Euro </option>
-        <option value="GBP">GBP - Brytyjski funt szterling </option>
-    </select>
-);
+const Select = () => {
+    const [selectedCurrency, setSelectedCurrency] = useState("wybierz walutę");
+    console.log(`Wybrana waluta: ${selectedCurrency}`);
+
+    return (
+        <select
+            className="select"
+            value={selectedCurrency}
+            onChange={({ target }) => setSelectedCurrency(target.value)}
+        >
+            {currencies.map(currency => (
+                <option key={currency.id}>
+                    {currency.name}
+                </option>
+                )
+            )}
+        </select>
+)}
+
+
 
 export default Select;
