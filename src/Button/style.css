@@ -11,9 +11,9 @@
 }
 
 .button:hover {
-  background-color: hsl(347, 77%, 30%);
+  background-color: hsl(221, 51%, 30%);
 }
 
 .button:active {
-  background-color: hsl(347, 77%, 50%);
+  background-color:hsl(221, 51%, 45%);
 }
