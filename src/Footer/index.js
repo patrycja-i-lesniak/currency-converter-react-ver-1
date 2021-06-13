@@ -1,5 +1,5 @@
 import "./style.css";
-import Paragraph from "../Paragraph";
+import Paragraph from "../Form/Paragraph";
 
 const Footer = ({text}) => (
     <footer className="footer">
