@@ -1,7 +1,6 @@
 .paragraph {
-  max-width: 200px;
-  width: 100%;
   color: hsl(221, 51%, 25%);
-  display: inline-block;
   font-weight: bold;
+  padding: 10px;
 }
+

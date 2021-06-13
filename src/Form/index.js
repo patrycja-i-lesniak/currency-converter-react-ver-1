@@ -8,9 +8,9 @@ import Result from "../Result";
 const Form = () => (
     <form className="form">
         <fieldset className="form__field">
-            <Paragraph text=" Wartość w PLN:" />
+            <Paragraph text=" Wartość w PLN" />
             <Input />
-            <Paragraph text="Przelicz na:" />
+            <Paragraph text="Przelicz na" />
             <Select />
             <Button buttonName="Policz kurs" />
             <Paragraph text="Kwota w wybranej walucie:">
