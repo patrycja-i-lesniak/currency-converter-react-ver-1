@@ -6,9 +6,10 @@ const Result = ({ result }) => (
             <>
                 <p>Kwota wyliczona na podstawie kursu NBP </p>
                 <p> z dnia 14-06-2021:</p>
-                <p className="result result--paragraph">{result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
-                {result.targetAmount.toFixed(2)}&nbsp;{result.currency}</p>
-
+                <p className="result result--paragraph">
+                    {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
+                    {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                </p>
             </>
         )}
     </div>

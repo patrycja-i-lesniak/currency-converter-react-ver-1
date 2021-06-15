@@ -1,5 +1,5 @@
 const currencies = [
-    { id: "", name: "wybierz walutę"},
+    { id: "", name: "wybierz walutę" },
     { id: "CHF", rate: 4.1360, name: "CHF - Frank szwajcarski" },
     { id: "EUR", rate: 4.5027, name: "EUR - Euro" },
     { id: "GBP", rate: 5.2369, name: "GBP - Funt szterling" },

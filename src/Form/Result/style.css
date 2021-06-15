@@ -1,9 +1,9 @@
 .result {
   text-align: center;
-  margin:20px;
-  color:hsl(221, 51%, 25%);
+  margin: 20px;
+  color: hsl(221, 51%, 25%);
 }
 .result--paragraph {
   font-size: larger;
-  font-weight:bolder;
+  font-weight: bolder;
 }

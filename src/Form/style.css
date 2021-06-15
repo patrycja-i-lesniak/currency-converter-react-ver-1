@@ -1,11 +1,9 @@
 .form {
- 
   background-color: rgb(198, 233, 247);
   justify-content: center;
 }
 
-
-.form__field { 
+.form__field {
   display: flex;
   flex-direction: column;
   border: none rgb(182, 224, 240);

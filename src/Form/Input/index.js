@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Input = ({amount, setAmount}) => {
+const Input = ({ amount, setAmount }) => {
     return (
         <input
             className="input"

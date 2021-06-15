@@ -1,9 +1,9 @@
 import "./style.css";
 import Paragraph from "../Form/Paragraph";
 
-const Footer = ({text}) => (
+const Footer = ({ text }) => (
     <footer className="footer">
-        <Paragraph text={text}/>
+        <Paragraph text={text} />
     </footer>
 );
 
