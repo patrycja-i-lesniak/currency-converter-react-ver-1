@@ -1,9 +1,6 @@
 import "./style.css";
-import { useState } from "react";
 
-const Input = () => {
-    const [inputValue, setInputValue] = useState("");
-
+const Input = ({amount, setAmount}) => {
     return (
         <input
             className="input"
@@ -12,8 +9,8 @@ const Input = () => {
             step="0.01"
             placeholder="0,00"
             required
-            value={inputValue}
-            onChange={({ target }) => setInputValue(target.value)}
+            value={amount}
+            onChange={({ target }) => setAmount(target.value)}
         />
     )
 };
