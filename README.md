@@ -1,17 +1,15 @@
-# CURRENCY CONVERTER - ver.1
+# CURRENCY CONVERTER REACT- ver.1
 
 Author: Patrycja Lesniak :hibiscus:
 
-- May 2, 2021
-- Work in progress.
+- June 14, 2021
+- Work steel in progress.
+
+# Demo: 
+https://patrycja-i-lesniak.github.io/currency-converter-react-ver-1/
 
 Simple currency converter :moneybag: - version 1 - converts PLN into other currencies based on the default exchange rate.
 
-## Exchange rates as of May 2, 2021
-
-- CHF = 4.1368;
-- EUR = 4.5427;
-- GBP = 5.2250;
 
 ## How to use:
 
@@ -25,9 +23,7 @@ Project is created with:
 
 - HTML;
 - CSS;
-- BEM;
 - Flex;
-- Media queries
 - ES6+;
 - React;
 
