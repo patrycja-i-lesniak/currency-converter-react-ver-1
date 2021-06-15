@@ -1,13 +1,13 @@
 .form {
-  max-width: 650px;
+ 
+  background-color: rgb(198, 233, 247);
+  justify-content: center;
 }
 
-.form__field {
+
+.form__field { 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 1px solid rgb(182, 224, 240);
-  background-color: rgb(182, 224, 240);
-  padding: 20px;
-  margin: 0 auto;
+  border: none rgb(182, 224, 240);
+  background-color: rgb(198, 233, 247);
 }

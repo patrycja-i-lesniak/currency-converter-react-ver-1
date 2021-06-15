@@ -1,8 +1,8 @@
 .header {
   background-color: hsl(221, 51%, 25%);
+  border: 1px solid hsl(221, 51%, 25%);
   color: white;
   padding: 30px;
-  box-shadow: 5px 5px 10px #ccc;
   margin: auto;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -11,5 +11,4 @@
 
 .header__text {
   text-align: center;
-  font-size: larger;
 }
