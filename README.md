@@ -1,9 +1,11 @@
 # CURRENCY CONVERTER REACT- ver.1
 
-Author: Patrycja Lesniak :hibiscus:
+* Author: **Patrycja Leśniak** :hibiscus:
 
 - June 14, 2021
 - Work steel in progress.
+
+![Screen](readmeImage.jpg)
 
 # Demo: 
 https://patrycja-i-lesniak.github.io/currency-converter-react-ver-1/
