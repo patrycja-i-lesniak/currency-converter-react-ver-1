@@ -5,7 +5,7 @@
 - June 14, 2021
 - Work steel in progress.
 
-![Screen](readmeImage.jpg)
+![Image](public/readmeImage.jpg)
 
 # Demo: 
 https://patrycja-i-lesniak.github.io/currency-converter-react-ver-1/
