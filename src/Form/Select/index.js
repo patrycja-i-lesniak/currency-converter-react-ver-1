@@ -12,6 +12,7 @@ const Select = ({ currency, setCurrency }) => (
             <option
                 key={currency.id}
                 value={currency.id}
+                required
             >
                 {currency.name}
             </option>
