@@ -1,11 +1,13 @@
 import "./style.css";
+import { useState } from "react";
 import Button from "./Button";
 import Input from "./Input";
 import Paragraph from "./Paragraph";
 import Select from "./Select";
 import Result from "./Result";
-import { useState } from "react";
 import currencies from "../currencies";
+import Clock from "./Clock";
+
 
 const Form = ({ result, calculateResult }) => {
     const [amount, setAmount] = useState("");
@@ -22,6 +24,7 @@ const Form = ({ result, calculateResult }) => {
             onSubmit={onSubmit}
         >
             <fieldset className="form__field">
+                <Clock />
                 <Paragraph
                     text="Kwota w PLN"
                 />
