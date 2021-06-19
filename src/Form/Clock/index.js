@@ -7,14 +7,14 @@ const Clock = () => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setDate(new Date().toLocaleDateString(undefined,
-            {
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-                hour: "numeric",
-                minute: "numeric",
-                second: "numeric",
-            }
+                {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                    hour: "numeric",
+                    minute: "numeric",
+                    second: "numeric",
+                }
             ));
         }, 0);
 
