@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Main = styled.mani`
+export const Main = styled.main`
     max-width: 650px;
     margin: 20px auto;
     box-shadow: 5px 5px 10px #ccc;
