@@ -1,7 +1,9 @@
-import "./style.css";
+import { ParagraphText} from "./style.css";
 
 const Paragraph = ({ text }) => (
-    <p className="paragraph">{text}</p>
+    <ParagraphText>
+        {text}
+    </ParagraphText>
 );
 
 export default Paragraph;
