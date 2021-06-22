@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ParagraphText = styled.paragraph`
+export const ParagraphText = styled.p`
     color: hsl(221, 51%, 25%);
     font-weight: bold;
     padding: 20px;

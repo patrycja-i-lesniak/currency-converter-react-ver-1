@@ -1,4 +1,4 @@
-import { ParagraphText} from "./style.css";
+import { ParagraphText } from "./styled.js";
 
 const Paragraph = ({ text }) => (
     <ParagraphText>
