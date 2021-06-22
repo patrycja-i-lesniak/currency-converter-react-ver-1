@@ -1,10 +1,10 @@
-import "./style.css";
+import { FooterElement } from "./styled.js";
 import Paragraph from "../Paragraph";
 
 const Footer = ({ text }) => (
-    <footer className="footer">
+    <FooterElement>
         <Paragraph text={text} />
-    </footer>
+    </FooterElement>
 );
 
 export default Footer;
