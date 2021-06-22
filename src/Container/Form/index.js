@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styled.js";
 import { useState, useRef } from "react";
 import Button from "./Button";
 import Input from "./Input";
@@ -7,6 +7,7 @@ import Select from "./Select";
 import Result from "./Result";
 import currencies from "../currencies";
 import Clock from "./Clock";
+import { FormBody, Fieldset } from "./styled"
 
 
 
@@ -36,11 +37,10 @@ const Form = () => {
     };
 
     return (
-        <form
-            className="form"
+        <FormBody
             onSubmit={onSubmit}
         >
-            <fieldset className="form__field">
+            <Fieldset>
                 <Clock />
                 <Paragraph
                     text="Kwota w PLN"
@@ -62,8 +62,8 @@ const Form = () => {
                 <Result
                     result={result}
                 />
-            </fieldset>
-        </form>
+            </Fieldset>
+        </FormBody>
     );
 };
 
