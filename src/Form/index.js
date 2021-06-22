@@ -1,17 +1,34 @@
 import "./style.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Button from "./Button";
 import Input from "./Input";
-import Paragraph from "./Paragraph";
+import Paragraph from "../Paragraph";
 import Select from "./Select";
 import Result from "./Result";
 import currencies from "../currencies";
 import Clock from "./Clock";
 
 
-const Form = ({ result, calculateResult }) => {
+
+
+const Form = () => {
     const [amount, setAmount] = useState("");
     const [currency, setCurrency] = useState(currencies[0].id);
+    const [result, setResult] = useState();
+    const calculateResult = (amount, currency) => {
+
+        const rate = currencies
+            .find(({ id }) => id === currency)
+            .rate;
+
+        setResult({
+            sourceAmount: +amount,
+            targetAmount: amount / rate,
+            currency,
+        });
+    }
+
+    const inputRef = useRef(null);
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -29,6 +46,7 @@ const Form = ({ result, calculateResult }) => {
                     text="Kwota w PLN"
                 />
                 <Input
+                    ref={inputRef}
                     amount={amount}
                     setAmount={setAmount}
                 />
@@ -38,6 +56,7 @@ const Form = ({ result, calculateResult }) => {
                     setCurrency={setCurrency}
                 />
                 <Button
+                    onClick={() => inputRef.current.focus()}
                     buttonName="Policz kurs"
                 />
                 <Result
