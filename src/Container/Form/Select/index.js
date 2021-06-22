@@ -1,10 +1,9 @@
-import "./style.css";
+import { Wrapped } from "./styled.js";
 import currencies from "../../currencies";
 
 
 const Select = ({ currency, setCurrency }) => (
-    <select
-        className="select"
+    <Wrapped
         value={currency}
         onChange={({ target }) => setCurrency(target.value)}
     >
@@ -17,7 +16,7 @@ const Select = ({ currency, setCurrency }) => (
                 {currency.name}
             </option>
         ))}
-    </select>
+    </Wrapped>
 )
 
 export default Select;
