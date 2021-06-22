@@ -1,7 +1,7 @@
-import "./style.css";
+import { FormButton } from "./styled.js";
 
 const Button = ({ buttonName }) => (
-    <button className="button">{buttonName}</button>
+    <FormButton>{buttonName}</FormButton>
 );
 
 export default Button;
