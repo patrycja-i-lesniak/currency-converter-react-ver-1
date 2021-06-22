@@ -9,3 +9,8 @@
   word-spacing: 15px;
   text-align: center;
 }
+@media (max-width: 390px) {
+  .header {
+    font-size: 1.7em ;
+  }
+}
