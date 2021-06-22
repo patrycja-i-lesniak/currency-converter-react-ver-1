@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./style.css";
+import { Paragraph } from "./styled.js";
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
@@ -26,7 +26,9 @@ const Clock = () => {
     );
 
     return (
-        <p className="clock">Dzisiaj jest {formattedDate}</p>
+        <Paragraph>
+            Dzisiaj jest {formattedDate}
+        </Paragraph>
     );
 
 };
