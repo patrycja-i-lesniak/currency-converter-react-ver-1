@@ -1,18 +1,18 @@
-import "./style.css";
+import { Wrapped, Paragraph } from "./styled.js";
 
 const Result = ({ result }) => (
-    <div className="result">
+    <Wrapped>
         {result !== undefined && (
             <>
-                <p>Kwota wyliczona na podstawie kursu NBP </p>
-                <p> z dnia 14-06-2021:</p>
-                <p className="result result--paragraph">
-                    {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
-                    {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
-                </p>
+                <Paragraph>Kwota wyliczona na podstawie kursu NBP </Paragraph>
+                <Paragraph> z dnia 14-06-2021:</Paragraph>
+                <Paragraph bolder>
+                        {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
+                        {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                </Paragraph>
             </>
         )}
-    </div>
+    </Wrapped>
 );
 
 export default Result;
