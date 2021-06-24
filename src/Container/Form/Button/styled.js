@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const FormButton = styled.button`
-    background-color: hsl(221, 51%, 25%);
+    background-color: ${({ theme }) => theme.colors.primaryColor};
     border: none;
     margin: 50px 30px 0px;
     padding: 20px;
     color: white;
-    box-shadow: 3px 3px 5px hsl(0, 0%, 50%);
+    box-shadow: ${({ theme }) => theme.shadow};
 
 
     &:hover {
-        background-color: hsl(221, 51%, 30%);
+        background-color: ${({ theme }) => theme.colors.primaryColorHover};
         transition: 1s;
     }
 
     &:active {
-        background-color: hsl(221, 51%, 45%);
+        background-color: ${({ theme }) => theme.colors.primaryColorActive};
         transition: 1s;
     }
 `;

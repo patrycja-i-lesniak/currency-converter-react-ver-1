@@ -6,11 +6,8 @@ import Paragraph from "../Paragraph";
 import Select from "./Select";
 import Result from "./Result";
 import currencies from "../currencies";
-import Clock from "./Clock";
+import { Clock } from "./Clock";
 import { FormBody, Fieldset } from "./styled"
-
-
-
 
 const Form = () => {
     const [amount, setAmount] = useState("");

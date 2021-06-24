@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ParagraphText = styled.p`
-    color: hsl(221, 51%, 25%);
+    color: ${({ theme }) => theme.colors.primaryColor};
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 `;

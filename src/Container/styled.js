@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     max-width: 650px;
-    margin: 20px auto;
-    box-shadow: 5px 5px 10px #ccc;
+    margin: 15px auto;
+    box-shadow: ${({ theme }) => theme.shadow};
     font-family: "Lato", sans-serif;
     min-width: 280px;
 
-    @media (max-width: 720px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
       margin: 15px;
     }
 `;

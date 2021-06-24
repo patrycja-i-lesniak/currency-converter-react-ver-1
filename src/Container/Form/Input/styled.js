@@ -5,5 +5,5 @@ export const InputBody = styled.input`
   margin: 0 30px;
   border: 1px solid #ddd;
   color: hsl(0, 0%, 60%);
-  box-shadow: 3px 3px 5px grey;
+  box-shadow: ${({ theme }) => theme.shadow};
 `;
