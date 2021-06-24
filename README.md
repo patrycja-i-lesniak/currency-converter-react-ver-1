@@ -26,8 +26,11 @@ Project is created with:
 - HTML;
 - CSS;
 - Flex;
+- Media queries;
 - ES6+;
-- React;
+- React JS;
+- Styled Components;
+- Custom hooks.
 
 # Getting Started with Create React App
 
