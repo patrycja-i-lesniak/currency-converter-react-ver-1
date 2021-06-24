@@ -1,20 +1,11 @@
-import { useState, useEffect } from "react";
 import { Paragraph } from "./styled.js";
+import {useCurrentDate} from "./useCurrentDate";
 
-const Clock = () => {
-    const [date, setDate] = useState(new Date());
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDate(new Date());
-        }, 1000);
+export const Clock = () => {
+    const date = useCurrentDate();
 
-        return () => {
-            clearInterval(intervalId)
-        };
-    }, []);
-
-    const formattedDate = date.toLocaleDateString(undefined,
+    const formatDate = (date) => date.toLocaleDateString(undefined,
         {
             weekday: "long",
             day: "numeric",
@@ -27,10 +18,7 @@ const Clock = () => {
 
     return (
         <Paragraph>
-            Dzisiaj jest {formattedDate}
+            Dzisiaj jest {formatDate(date)}
         </Paragraph>
     );
-
 };
-
-export default Clock;
