@@ -1,10 +1,10 @@
-import { FooterElement } from "./styled.js";
+import { Wrapper } from "./styled.js";
 import Paragraph from "../Paragraph";
 
 const Footer = ({ text }) => (
-    <FooterElement>
+    <Wrapper>
         <Paragraph text={text} />
-    </FooterElement>
+    </Wrapper>
 );
 
 export default Footer;

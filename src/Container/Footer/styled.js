@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterElement = styled.footer`
+export const Wrapper = styled.footer`
     text-align: center;
     font-size: smaller;
     font-weight: 300;
