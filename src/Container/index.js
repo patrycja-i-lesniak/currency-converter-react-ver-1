@@ -1,9 +1,16 @@
-import { Main } from "./styled.js";
+import styled from "styled-components";
 
-const Container = ({ children }) => (
-    <Main>
-        {children}
-    </Main>
-);
+export const Container = styled.main`
+    max-width: 650px;
+    margin: 15px auto;
+    box-shadow: ${({ theme }) => theme.shadow};
+    font-family: "Lato", sans-serif;
+    min-width: 280px;
 
-export default Container;
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
+      margin: 15px;
+    }
+`;
+
+
+
