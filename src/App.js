@@ -1,6 +1,6 @@
 import Header from "./Container/Header";
 import Form from "./Container/Form";
-import Footer from "./Container/Footer";
+import { Footer } from "./Container/Footer";
 import { Container } from "./Container";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./Theme"
@@ -14,9 +14,9 @@ function App() {
             title="Kalkulator walut"
           />
           <Form />
-          <Footer
-            text="Coded by Trishya © 2021"
-          />
+          <Footer>
+         Coded by Trishya © 2021
+          </Footer>
         </Container>
       </>
     </ThemeProvider>

@@ -1,10 +1,11 @@
-import { Wrapper } from "./styled.js";
-import Paragraph from "../Paragraph";
+import styled from "styled-components";
 
-const Footer = ({ text }) => (
-    <Wrapper>
-        <Paragraph text={text} />
-    </Wrapper>
-);
-
-export default Footer;
+export const Footer = styled.footer`
+    text-align: center;
+    font-size: smaller;
+    font-weight: 300;
+    color: ${({ theme }) => theme.colors.primaryColor};
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+`;
