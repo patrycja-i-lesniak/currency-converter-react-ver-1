@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components"
+import styled, { css } from "styled-components"
 
 export const Wrapped = styled.div`
     text-align: center;
@@ -11,5 +11,5 @@ export const Paragraph = styled.p`
 
     ${({ bolder }) => bolder && css`
         font-weight: 900;
-`}
+    `}
 `;

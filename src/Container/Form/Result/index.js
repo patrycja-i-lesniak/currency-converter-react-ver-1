@@ -7,8 +7,8 @@ const Result = ({ result }) => (
                 <Paragraph>Kwota wyliczona na podstawie kursu NBP </Paragraph>
                 <Paragraph> z dnia 14-06-2021:</Paragraph>
                 <Paragraph bolder>
-                        {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
-                        {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                    {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
+                    {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
                 </Paragraph>
             </>
         )}

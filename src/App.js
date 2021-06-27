@@ -15,7 +15,7 @@ function App() {
           />
           <Form />
           <Footer>
-         Coded by Trishya © 2021
+            Coded by Trishya © 2021
           </Footer>
         </Container>
       </>

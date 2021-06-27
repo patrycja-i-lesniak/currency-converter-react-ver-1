@@ -1,5 +1,5 @@
 import { Paragraph } from "./styled.js";
-import {useCurrentDate} from "./useCurrentDate";
+import { useCurrentDate } from "./useCurrentDate";
 
 
 export const Clock = () => {

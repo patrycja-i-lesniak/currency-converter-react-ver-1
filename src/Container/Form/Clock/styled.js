@@ -11,4 +11,3 @@ export const Paragraph = styled.p`
       text-align: center;
     }
 `;
-
