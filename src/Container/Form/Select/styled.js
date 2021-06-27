@@ -1,9 +1,7 @@
 import styled from "styled-components";
+import {BaseFormField} from "../Input/styled";
 
 export const Wrapped = styled.select`
-    margin: 0 30px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: ${({ theme }) => theme.shadow};
+    ${BaseFormField}
     height: 60px;
 `;

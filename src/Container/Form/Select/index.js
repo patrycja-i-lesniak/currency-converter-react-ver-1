@@ -1,4 +1,4 @@
-import { Wrapped } from "./styled.js";
+import { Wrapped } from "./styled";
 import currencies from "../../currencies";
 
 
