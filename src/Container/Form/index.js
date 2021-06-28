@@ -11,8 +11,12 @@ const Form = () => {
     const [amount, setAmount] = useState("");
     const [currency, setCurrency] = useState(currencies[0].id);
     const [result, setResult] = useState();
-    const calculateResult = (amount, currency) => {
+    const inputRef = useRef(null);
+    const deleteAmount  = () => {
+        setAmount([]);
+    };
 
+    const calculateResult = (amount, currency) => {
         const rate = currencies
             .find(({ id }) => id === currency)
             .rate;
@@ -24,11 +28,15 @@ const Form = () => {
         });
     }
 
-    const inputRef = useRef(null);
-
     const onSubmit = (event) => {
         event.preventDefault();
+        const amountTrimmed = amount.trim();
+        if (!amountTrimmed) {
+            return;
+        }
+        deleteAmount(amountTrimmed);
         calculateResult(amount, currency);
+        inputRef.current.focus();
     };
 
     return (
@@ -55,19 +63,18 @@ const Form = () => {
                     as="select"
                     value={currency}
                     onChange={({ target }) => setCurrency(target.value)}
-                    >
+                >
                     {currencies.map(currency => (
-                    <option
-                      key={currency.id}
-                        value={currency.id}
-                        required
-                     >
-                        {currency.name}
-                          </option>
-                     ))}
-               </Input>
+                        <option
+                            key={currency.id}
+                            value={currency.id}
+                            required
+                        >
+                            {currency.name}
+                        </option>
+                    ))}
+                </Input>
                 <Button
-                    onClick={() => inputRef.current.focus()}
                     buttonName="Policz kurs"
                 />
                 <Result
