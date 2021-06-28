@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FormBody = styled.form`
-    background-color: ${({ theme }) => theme.colors.secondaryColor};
+    background-color: ${({ theme }) => theme.colors.FrenchPass};
     justify-content: center;
 `;
 

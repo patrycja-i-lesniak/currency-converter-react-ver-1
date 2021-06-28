@@ -1,9 +1,9 @@
 export const theme = {
     colors: {
-        primaryColor:"hsl(221, 51%, 25%)",
-        primaryColorHover:"hsl(221, 51%, 35%)",
-        primaryColorActive:"hsl(221, 51%, 45%)",
-        secondaryColor: "hsl(197, 75%, 87%)",
+        BigStone:"#18243A",
+        Astronaut:"#253E74",
+        SanMarino: "#41749F",
+        FrenchPass: "#C9EEFC",
     },
     breakpoints: {
         xsmall: 576,
