@@ -1,13 +1,11 @@
 import "./styled.js";
 import { useState, useRef } from "react";
 import Button from "./Button";
-import Input from "./Input";
 import Paragraph from "../Paragraph";
-import Select from "./Select";
 import Result from "./Result";
 import currencies from "../currencies";
 import { Clock } from "./Clock";
-import { FormBody, Fieldset } from "./styled"
+import { FormBody, Fieldset, Input } from "./styled"
 
 const Form = () => {
     const [amount, setAmount] = useState("");
@@ -44,14 +42,30 @@ const Form = () => {
                 />
                 <Input
                     ref={inputRef}
-                    amount={amount}
-                    setAmount={setAmount}
+                    type="number"
+                    min="0.01"
+                    step="0.01"
+                    placeholder="0,00"
+                    required
+                    value={amount}
+                    onChange={({ target }) => setAmount(target.value)}
                 />
                 <Paragraph text="Przelicz na" />
-                <Select
-                    currency={currency}
-                    setCurrency={setCurrency}
-                />
+                <Input
+                    as="select"
+                    value={currency}
+                    onChange={({ target }) => setCurrency(target.value)}
+                    >
+                    {currencies.map(currency => (
+                    <option
+                      key={currency.id}
+                        value={currency.id}
+                        required
+                     >
+                        {currency.name}
+                          </option>
+                     ))}
+               </Input>
                 <Button
                     onClick={() => inputRef.current.focus()}
                     buttonName="Policz kurs"

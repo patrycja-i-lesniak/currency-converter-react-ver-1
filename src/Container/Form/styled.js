@@ -12,3 +12,11 @@ export const Fieldset = styled.fieldset`
     background-color: rgb(198, 233, 247);
     min-width: 280px;
 `;
+
+export const Input = styled.input`
+    padding: 20px;
+    margin: 0 30px;
+    border: 1px solid #ddd;
+    box-shadow: ${({ theme }) => theme.shadow};
+    color: hsl(0, 0%, 60%);
+`;
