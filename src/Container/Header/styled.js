@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-    background-color: ${({ theme }) => theme.colors.primaryColor};
+    background-color: ${({ theme }) => theme.colors.BigStone};
     color: white;
     padding: 30px;
     margin: auto;
