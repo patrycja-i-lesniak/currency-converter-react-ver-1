@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import Button from "./Button";
 import Paragraph from "../Paragraph";
 import Result from "./Result";
-import currencies from "../currencies";
+import currencies from "../currencies.js";
 import { Clock } from "./Clock";
 import { FormBody, Fieldset, Input } from "./styled"
 
