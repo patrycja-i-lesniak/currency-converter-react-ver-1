@@ -1,7 +1,7 @@
 export const theme = {
     colors: {
-        BigStone:"#18243A",
-        FrenchPass: "#C9EEFC",
+        bigStone:"#18243A",
+        frenchPass: "#C9EEFC",
     },
     breakpoints: {
         xsmall: 576,
