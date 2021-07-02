@@ -5,7 +5,7 @@ export const Footer = styled.footer`
     font-size: smaller;
     font-weight: 300;
     color: ${({ theme }) => theme.colors.bigStone};
-    font-weight: bold;
-    padding: 10px;
+    font-weight: 700;
+    padding: 15px;
     text-align: center;
 `;
