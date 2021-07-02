@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
     background-color: ${({ theme }) => theme.colors.bigStone};
-    color: white;
+    color: ${({ theme }) => theme.colors.white};
     padding: 30px;
     margin: auto;
     text-transform: uppercase;
