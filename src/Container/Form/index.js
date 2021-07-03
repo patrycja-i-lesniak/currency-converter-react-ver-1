@@ -12,7 +12,7 @@ const Form = () => {
     const [currency, setCurrency] = useState(currencies[0].id);
     const [result, setResult] = useState();
     const inputRef = useRef(null);
-    const deleteAmount  = () => {
+    const deleteAmount = () => {
         setAmount([]);
     };
 
@@ -38,6 +38,7 @@ const Form = () => {
         calculateResult(amount, currency);
         inputRef.current.focus();
     };
+
 
     return (
         <FormBody
