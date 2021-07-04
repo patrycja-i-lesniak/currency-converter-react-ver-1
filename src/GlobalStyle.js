@@ -14,4 +14,8 @@ export const GlobalStyle = createGlobalStyle`
     .root {
       font-size: 16px;
     }
+
+    body {
+      background-color: ${({ theme }) => theme.colors.darkGrey};
+    }
 `;

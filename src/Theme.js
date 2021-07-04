@@ -1,9 +1,12 @@
 export const theme = {
     colors: {
-        bigStone:"#18243A",
-        frenchPass: "#C9EEFC",
+        selectiveYellow:"#FFBB00",
+        woodsmoke: "#181919",
         white: "#FFFFFF",
         alto: "#DCDCDA",
+        robinsEggBlue: "#00C5B5",
+        torchRed: "#FF002C",
+        darkGrey: "#1F1F1F",
     },
     breakpoints: {
         xsmall: 576,
@@ -11,5 +14,5 @@ export const theme = {
         medium: 992,
         large: 1200,
     },
-    shadow: "5px 5px 7px #7f7f7f",
+    shadow: "5px 5px 7px #1A191A",
 };
