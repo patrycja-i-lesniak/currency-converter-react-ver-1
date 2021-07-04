@@ -28,7 +28,7 @@ export const useApiExchangesRates = () => {
             }
         };
 
-        setTimeout(getApiDate, 1000);
+        setTimeout(getApiDate, 3000);
     }, []);
 
     return ratesData;
