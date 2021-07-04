@@ -10,14 +10,16 @@
 # Demo: 
 https://patrycja-i-lesniak.github.io/currency-converter-react-ver-1/
 
-Simple currency converter :moneybag: - version 1 - converts PLN into other currencies based on the default exchange rate.
+Simple currency converter :moneybag: - version 1 - converts PLN into other currencies based on the Exchanges Rates European Central Bank.
 
 
 ## How to use:
 
-1. Enter the amount in PLN.
-2. Select a currency.
-3. Click the button and read the value.
+1. Wait for the data to be loaded.
+2. Enter the amount in PLN.
+3. Select a currency from list.
+4. Click the button and read the value.
+5. If you get an error, check your internet connection or try again later.
 
 ## Technologies
 
@@ -30,7 +32,10 @@ Project is created with:
 - ES6+;
 - React JS;
 - Styled Components;
-- Custom hooks.
+- Custom hooks;
+- Fetch;
+- Axios;
+- API.
 
 # Getting Started with Create React App
 
