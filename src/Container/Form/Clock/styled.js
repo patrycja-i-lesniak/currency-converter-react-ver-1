@@ -8,7 +8,7 @@ export const Paragraph = styled.p`
     margin-right: 10px;
     opacity: 50%;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mall}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
       text-align: center;
     }
 `;
