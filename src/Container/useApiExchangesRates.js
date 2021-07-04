@@ -15,7 +15,7 @@ export const useApiExchangesRates = () => {
         const getApiDate = async () => {
             try {
                 const response = await axios.get(apiUrl);
-                  setRatesData(
+                setRatesData(
                     {
                         date: response.data.date,
                         rates: response.data.rates,

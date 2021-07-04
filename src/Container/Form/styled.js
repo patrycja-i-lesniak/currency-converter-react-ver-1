@@ -30,12 +30,13 @@ export const Loading = styled.img.attrs({
 })`
 align-self: center;
 width: 300px;
+margin-bottom: 60px;
 `;
 
 export const NoInternet = styled.img.attrs({
     src: NoInternetGif,
 })`
-/* display: flex; */
 align-self: center;
 width: 300px;
+margin-bottom: 60px;
 `;
