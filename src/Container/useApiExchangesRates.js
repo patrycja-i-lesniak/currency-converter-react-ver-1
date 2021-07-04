@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState, useEffect } from "react";
 
 
@@ -13,15 +14,14 @@ export const useApiExchangesRates = () => {
     useEffect(() => {
         const getApiDate = async () => {
             try {
-                const response = await fetch(apiUrl);
-
-                if (!response.ok) {
-                    throw new Error(response.statusText);
-                }
-
-                const { date, rates } = await response.json();
-                setRatesData({ date, rates, status: "ready" });
-
+                const response = await axios.get(apiUrl);
+                  setRatesData(
+                    {
+                        date: response.data.date,
+                        rates: response.data.rates,
+                        status: "ready",
+                    }
+                );
 
             } catch (error) {
                 setRatesData({ status: "error" });
