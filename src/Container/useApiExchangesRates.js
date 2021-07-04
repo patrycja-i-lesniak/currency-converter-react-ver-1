@@ -9,7 +9,7 @@ export const useApiExchangesRates = () => {
         }
     );
 
-    const apiUrl = "https://api.exchangerate.host/latest";
+    const apiUrl = "https://api.exchangerate.host/latest?base=PLN";
 
     useEffect(() => {
         const getApiDate = async () => {
