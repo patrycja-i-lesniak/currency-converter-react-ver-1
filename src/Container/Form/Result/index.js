@@ -4,7 +4,7 @@ const Result = ({ result, date }) => (
     <Wrapped>
         {result !== undefined && (
             <>
-                <Paragraph>Kursy walut pobierane są z Europejskiego BankuCentralnego. </Paragraph>
+                <Paragraph>Kursy walut pobierane są z Europejskiego Banku Centralnego. </Paragraph>
                 <Paragraph>Kurs aktualny na dzień: {date} </Paragraph>
                 <Paragraph bolder>
                     {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
