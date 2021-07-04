@@ -10,8 +10,4 @@ export const Title = styled.h1`
     letter-spacing: 5px;
     word-spacing: 15px;
     text-align: center;
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
-      font-size: 1.7em ;
-    }
 `;

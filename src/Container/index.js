@@ -7,10 +7,6 @@ export const Container = styled.main`
     font-family: "Lato", sans-serif;
     min-width: 280px;
     background-color: ${({ theme }) => theme.colors.selectiveYellow};
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
-      margin: 15px;
-    }
 `;
 
 
