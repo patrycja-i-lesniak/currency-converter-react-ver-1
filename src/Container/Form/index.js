@@ -5,7 +5,7 @@ import Paragraph from "../Paragraph";
 import Result from "./Result";
 import { Clock } from "./Clock";
 import { useApiExchangesRates } from "../useApiExchangesRates";
-import { FormBody, Fieldset, Input } from "./styled";
+import { FormBody, Fieldset, Input, Loading, NoInternet } from "./styled";
 
 
 const Form = () => {
@@ -48,10 +48,16 @@ const Form = () => {
             <Fieldset>
                 {status === "loading"
                     ? (
-                        <Paragraph text="Ładuję kursy walut z Europejskiego Banku Centralnego" />
+                        <>
+                            <Loading />
+                            <Paragraph text="Ładuję kursy walut z Europejskiego Banku Centralnego" />
+                        </>
                     )
                     : status === "error" ? (
-                        <Paragraph text="Odpieramy atak zombie. Wróć za chwilę lub sprawdź połączenie z internetem." />
+                        <>
+                            <NoInternet />
+                            <Paragraph text="Ups.. mamy problem. Sprawdź połączenie z internetem lub wróć za chwilę." />
+                        </>
                     ) : (
                         <>
                             <Clock />
