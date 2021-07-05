@@ -7,7 +7,7 @@ export const Paragraph = styled.p`
     color: ${({ theme }) => theme.colors.crimson};
     margin-right: 10px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
       text-align: center;
     }
 `;

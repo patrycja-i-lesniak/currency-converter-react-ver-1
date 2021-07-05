@@ -6,7 +6,10 @@ export const Container = styled.main`
     box-shadow: ${({ theme }) => theme.shadow};
     font-family: "Lato", sans-serif;
     min-width: 280px;
-    background-color: ${({ theme }) => theme.colors.selectiveYellow};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
+        margin: 0 auto;
+    }
 `;
 
 

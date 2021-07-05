@@ -17,5 +17,9 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
       background-color: ${({ theme }) => theme.colors.white};
+
+      @media (max-width: ${({ theme }) => theme.breakpoints.small}px) {
+       padding: 10px;
+    }
     }
 `;

@@ -12,4 +12,8 @@ export const Title = styled.h1`
     text-align: center;
     font-family: 'Secular One', sans-serif;
     font-size: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.xsmall}px) {
+      font-size: 30px;
+    }
 `;
