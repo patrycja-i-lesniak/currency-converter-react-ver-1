@@ -7,6 +7,7 @@ export const Wrapped = styled.div`
 
 export const Paragraph = styled.p`
     font-size: 16px;
+    padding-top: 10px;
 
     ${({ result }) => result && css`
         font-weight: 200;
