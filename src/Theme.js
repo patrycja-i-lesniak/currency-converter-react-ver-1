@@ -13,5 +13,5 @@ export const theme = {
         medium: 992,
         large: 1200,
     },
-    shadow: "10px 10px 20px #303030",
+    shadow: "5px 5px 20px #303030",
 };
