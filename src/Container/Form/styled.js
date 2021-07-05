@@ -8,7 +8,7 @@ export const FormBody = styled.form`
 `;
 
 export const Fieldset = styled.fieldset`
-min-height: 550px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     border: none ;
@@ -28,15 +28,15 @@ export const Input = styled.input`
 export const Loading = styled.img.attrs({
     src: LoadingGif,
 })`
-align-self: center;
-width: 300px;
-margin-bottom: 60px;
+        align-self: center;
+        width: 300px;
+        margin-bottom: 60px;
 `;
 
 export const NoInternet = styled.img.attrs({
     src: NoInternetGif,
 })`
-align-self: center;
-width: 300px;
-margin-bottom: 60px;
+        align-self: center;
+        width: 300px;
+        margin-bottom: 60px;
 `;
