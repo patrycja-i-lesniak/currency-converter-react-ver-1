@@ -12,7 +12,7 @@ function App() {
         />
         <Form />
         <Footer>
-          Coded by Trishya © 2021
+          © 2021 | Coded by Patrycja Leśniak
         </Footer>
       </Container>
     </>
