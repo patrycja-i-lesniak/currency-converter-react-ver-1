@@ -8,4 +8,5 @@ export const Footer = styled.footer`
     font-weight: 700;
     padding: 15px;
     text-align: center;
+    background-color: ${({ theme }) => theme.colors.selectiveYellow};
 `;
