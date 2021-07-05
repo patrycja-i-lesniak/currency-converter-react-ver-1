@@ -7,6 +7,7 @@ export const FormButton = styled.button`
     padding: 15px;
     border-radius: 5px;
     color: ${({ theme }) => theme.colors.woodsmoke};
+    font-weight: 600;
     box-shadow: ${({ theme }) => theme.shadow};
     transition: filter 0.5s;
 

@@ -4,11 +4,11 @@ const Result = ({ result, date }) => (
     <Wrapped>
         {result !== undefined && (
             <>
-                <Paragraph>Kursy walut pobierane są z Europejskiego Banku Centralnego. </Paragraph>
-                <Paragraph>Kurs aktualny na dzień: {date} </Paragraph>
-                <Paragraph bolder>
-                    {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
-                    {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                <Paragraph result>Kursy walut pobierane są z Europejskiego Banku Centralnego. </Paragraph>
+                <Paragraph result>Kurs aktualny na dzień: {date} </Paragraph>
+                <Paragraph highlight>
+                    {result.sourceAmount.toFixed(2)}&nbsp;&nbsp;PLN&nbsp;&nbsp;={"  "}
+                    {result.targetAmount.toFixed(2)}&nbsp;&nbsp;{result.currency}
                 </Paragraph>
             </>
         )}

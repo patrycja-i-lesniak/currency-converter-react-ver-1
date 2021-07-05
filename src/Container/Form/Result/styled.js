@@ -3,13 +3,20 @@ import styled, { css } from "styled-components"
 export const Wrapped = styled.div`
     text-align: center;
     margin: 20px;
-    color:  ${({ theme }) => theme.colors.torchRed};
 `;
 
 export const Paragraph = styled.p`
     font-size: 16px;
 
-    ${({ bolder }) => bolder && css`
-        font-weight: 900;
+    ${({ result }) => result && css`
+        font-weight: 200;
+        font-size: 14px;
+        color:  ${({ theme }) => theme.colors.selectiveYellow};
+    `}
+
+    ${({ highlight }) => highlight && css`
+        font-weight: 600;
+        font-size: 20px;
+        color:  ${({ theme }) => theme.colors.crimson};
     `}
 `;
