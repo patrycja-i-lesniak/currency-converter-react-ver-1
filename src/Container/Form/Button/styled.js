@@ -10,6 +10,9 @@ export const FormButton = styled.button`
     font-weight: 600;
     box-shadow: ${({ theme }) => theme.shadow};
     transition: filter 0.5s;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 3px;
 
     &:hover {
         filter: brightness(110%);
