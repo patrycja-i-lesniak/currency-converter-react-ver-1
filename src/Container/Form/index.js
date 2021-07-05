@@ -75,7 +75,7 @@ const Form = () => {
                                 onChange={({ target }) => setAmount(target.value)}
                             />
                             <Paragraph text="Przelicz na" />
-                            <Input
+                            <Input select
                                 as="select"
                                 onChange={({ target }) => setCurrency(target.value)}
                                 required

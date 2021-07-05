@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import LoadingGif from "./loading.gif";
 import NoInternetGif from "./nointernet.gif";
 
@@ -12,7 +12,6 @@ export const Fieldset = styled.fieldset`
     display: flex;
     flex-direction: column;
     border: none ;
-    background-color: ${({ theme }) => theme.colors.woodsmoke};
     min-width: 280px;
 `;
 
@@ -23,6 +22,13 @@ export const Input = styled.input`
     box-shadow: ${({ theme }) => theme.shadow};
     color: hsl(0, 0%, 60%);
     border-radius: 5px;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        }
+    ${({ select }) => select && css`
+        height: 40px;
+    `}
 `;
 
 export const Loading = styled.img.attrs({
