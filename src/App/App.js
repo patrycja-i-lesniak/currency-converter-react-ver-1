@@ -1,6 +1,6 @@
-import Header from "./Container/Header";
-import Form from "./Container/Form";
-import { Footer } from "./Container/Footer";
+import Header from "../App/Header";
+import Form from "./Form";
+import { Footer } from "./Footer";
 import { Container } from "./Container";
 
 function App() {

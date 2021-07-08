@@ -1,10 +1,10 @@
 import "./styled.js";
 import { useState, useRef } from "react";
 import Button from "./Button";
-import Paragraph from "../Paragraph";
+import Paragraph from "../../App/Paragraph";
 import Result from "./Result";
 import { Clock } from "./Clock";
-import { useApiExchangesRates } from "../useApiExchangesRates";
+import { useApiExchangesRates } from "../../App/useApiExchangesRates";
 import { FormBody, Fieldset, Input, Loading, NoInternet } from "./styled";
 
 
