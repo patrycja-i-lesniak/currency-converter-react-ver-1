@@ -26,7 +26,10 @@ export const useApiExchangesRates = () => {
                 );
 
             } catch (error) {
-                setRatesData({ status: "error" });
+                setRatesData(
+                    {
+                        status: "error"
+                    });
             }
         };
 

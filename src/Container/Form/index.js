@@ -20,9 +20,11 @@ const Form = () => {
 
     const ratesData = useApiExchangesRates();
     const status = ratesData.status;
+    const rates = ratesData.rates;
+    const date = ratesData.date;
 
     const calculateResult = () => {
-        const rate = ratesData.rates[currency];
+        const rate = rates[currency];
         console.log(rate);
         setResult({
             sourceAmount: +amount,
@@ -81,7 +83,7 @@ const Form = () => {
                                 required
                                 value={currency}
                             >
-                                {Object.keys(ratesData.rates).map((currency) => (
+                                {Object.keys(rates).map((currency) => (
                                     <option
                                         key={currency}
                                         value={currency}
@@ -95,7 +97,7 @@ const Form = () => {
                             />
                             <Result
                                 result={result}
-                                date={ratesData.date}
+                                date={date}
                             />
                         </>
                     )}
